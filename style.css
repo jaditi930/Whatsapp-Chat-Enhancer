@@ -13,9 +13,9 @@ div .title{
 #about{
     display: none;
 }
-.message{
+/* .message{
     min-width: 70vw;
-}
+} */
 }
 #particles-js {
     position: fixed;
