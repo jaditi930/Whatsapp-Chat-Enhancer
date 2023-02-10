@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@media  only screen and (max-width:480px) {
+div .title{
+    font-size:50px;
+    font-weight:250;
+}
+.bg{
+    min-width:90vw;
+}
+#about{
+    display: none;
+}
+.message{
+    min-width: 70vw;
+}
+}
+#particles-js {
+    position: fixed;
+    top: 0px;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-color: black;
+}
+.chooseFile{
+    height:100vh;
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+    /* align-items: center;
+    justify-content: center;
+} */
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+}
+.toast{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+#file_input{
+    display: none;
+    padding: 15px 10px;
+    background-color:#27c73f;
+    border-radius: 10px;
+    align-self: center;
+}
+button{
+    padding: 20px 15px;
+    background-color:#27c73f;
+    border-radius: 36px;
+    align-self: center;
+    font-size: 1.6rem;
+    color: white;
+}
+div .title{
+    font-size: 70px;
+    font-weight: 1000;
+    font-style: bold;
+    padding-top: 20px;
+    margin-bottom: 75px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+    color: #27c73f;
+    width:100vw;
+    height:fit-content;
+    margin-top: 50px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#about{
+    padding:75px;
+    color:white;
+    font-size: 2rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.date-box{
+    background-color: rgb(110, 185, 225);
+    color:white;
+    border-radius: 20px;  
+    padding:10px;
+}
+.base{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: absolute;
+    z-index: 2;
+    justify-content: center;
+}
+.bg{
+/* background-image: url("dark backg.jpg"); */
+height:100%;
+width:50vw;
+padding: 10px;
+position: absolute;
+z-index: 2;
+}
+.message{
+width:fit-content;
+max-width: 30vw;
+background-color: rgb(67, 66, 66);
+color: white;
+padding: 10px;
+}
+.content{
+display: flex;
+}
+.timestamp{
+font-size: 0.6rem;
+align-self: flex-end;
+margin-left: 10px;
+}
+.sender{
+margin-bottom: 10px;
+}
+#messages{
+display: flex;
+flex-direction: column;
+border:3px solid #27c73f;
+padding:10px;
+border-radius: 20px;
+}
+.message{
+margin-bottom: 10px;
+border-radius: 10px;
+}
