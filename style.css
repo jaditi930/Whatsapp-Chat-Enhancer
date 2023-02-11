@@ -7,8 +7,11 @@ div .title{
     font-size:50px;
     font-weight:250;
 }
-.bg{
-    min-width:90vw;
+/* #messages{
+    max-width:80vw;
+} */
+.message{
+    overflow-x: auto;
 }
 #about{
     display: none;
@@ -91,21 +94,13 @@ div .title{
     padding:10px;
 }
 .base{
-    width: 100%;
-    height: 100%;
+    /* width: 100%; */
     display: flex;
     position: absolute;
     z-index: 2;
     justify-content: center;
 }
-.bg{
-/* background-image: url("dark backg.jpg"); */
-height:100%;
-width:50vw;
-padding: 10px;
-position: absolute;
-z-index: 2;
-}
+
 .message{
 width:fit-content;
 max-width: 30vw;
@@ -115,6 +110,7 @@ padding: 10px;
 }
 .content{
 display: flex;
+/* width: 60vw; */
 }
 .timestamp{
 font-size: 0.6rem;
@@ -125,13 +121,16 @@ margin-left: 10px;
 margin-bottom: 10px;
 }
 #messages{
-display: flex;
+display: none;
 flex-direction: column;
 border:3px solid #27c73f;
 padding:10px;
 border-radius: 20px;
+width:60vw;
+flex-wrap: wrap;
 }
 .message{
+    /* width:inherit; */
 margin-bottom: 10px;
 border-radius: 10px;
 }

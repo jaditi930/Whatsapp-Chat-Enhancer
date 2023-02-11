@@ -57,20 +57,17 @@
 
   const reader = new FileReader();
   reader.addEventListener("load", async () => {
-    $(".bg").css("display","block")
     $("input").css("display","none")
-
+    $("#messages").css("display","flex")
+    $(".base").css("width","100%");
     let msg_data=reader.result;
     let result=msg_data.split(/\r?\n/)
     result.splice(0,1);
-    // console.log(result)
+    console.log(result)
     var latest_message="",latest_sender="",latest_time="",last_date="",current_date="";
      for(var i=0;i<result.length;i++){
-        // console.log(result[i])
         if(result[i][2]!="/")
         {   
-            if(result[i]=="")
-             continue;
             print_message(result[i],latest_sender,latest_time);
             continue;
         }
@@ -93,12 +90,13 @@
         latest_time=time[0]
         latest_sender=d[1]
         latest_message=content[2]
+        console.log(latest_message[1])
+        if(latest_message[1]=="<")
+        latest_message="{ Media Omitted }";
         i++;
         while(i<result.length && result[i][2]!="/")
         {   
             // console.log("hi")
-            if(result[i]=="")
-             continue;
             latest_message+="<br>"+result[i];
             i++;
         }
