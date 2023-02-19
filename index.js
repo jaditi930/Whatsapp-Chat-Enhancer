@@ -4,15 +4,19 @@
     } 
     async function update_message()
     {
-    const about_msg="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit libero quaerat numquam\
-     maiores pariatur dicta molestiae at voluptatem voluptas dolorem ea saepe reiciendis sunt, eligendi \
-     tempora maxime delectus, quos nihil eos eum asperiores placeat."
+    const about_msg="This website allows you to convert your personal Whatsapp messages in the form of text\
+     files into a much more readable format like original Whatsapp Chats.You just need to select the \
+     text file and then the messages will be displayed as in Whatsapp.Its a cool project to try and \
+     make the messages much more readable."
      for(let i=0;i<about_msg.length;i++)
     {
         document.getElementById("about").innerHTML+=about_msg[i];
         if(i%3==0)
         await sleep(100);
     }
+    document.getElementById("about").innerHTML=""
+    update_message()
+
 }
     function print_message(latest_message,latest_sender,latest_time)
     {
